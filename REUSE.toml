@@ -1,0 +1,14 @@
+version = 1
+SPDX-PackageName = "creality-spacepi-x4-roller"
+
+[[annotations]]
+path = ["stl/**", "step/**", "README.md", "NOTICE.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 C. Marshall"
+SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
+
+[[annotations]]
+path = ["src/**", "tools/**", ".github/**", ".gitignore", "REUSE.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 C. Marshall"
+SPDX-License-Identifier = "MIT"
