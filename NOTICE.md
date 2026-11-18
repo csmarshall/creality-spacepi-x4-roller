@@ -4,9 +4,9 @@ This repository is an independent modification and extension of an existing mode
 
 ## Upstream
 
-- **Title:** SPACE PI X4 - FREE ROLL MOD
-- **Author:** Alberto Maciel (MakerWorld: @AlbertoMaciel)
-- **Page:** https://makerworld.com/en/models/2741360-space-pi-free-roll-mod
+- **Title:** SPACE PI - FREE ROLL MOD
+- **Author:** Alberto Maciel (MakerWorld: https://makerworld.com/@AlbertoMaciel, design ID 2741360)
+- **Page:** https://makerworld.com/models/2741360-space-pi-free-roll-mod
 - **Licence:** the upstream model file carries the licence tag **CC BY-NC** in its embedded metadata. The metadata does not state a version; check the page for the exact terms before you rely on them.
 
 ## What comes from upstream

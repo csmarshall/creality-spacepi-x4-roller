@@ -1,6 +1,6 @@
 # Creality Space Pi X4 spool roller
 
-Printable parts that let two filament spools roll freely on bearings inside a Creality Space Pi X4 dryer: two stands, two 608-bearing wedges, a clip-on pulley core and three soft petals per roller. It adapts the "SPACE PI X4 - FREE ROLL MOD" by Alberto Maciel (see [NOTICE.md](NOTICE.md)) and adds a clip-on pulley with soft petals that grip spool bores of about 50 to 60 mm.
+Printable parts that let two filament spools roll freely on bearings inside a Creality Space Pi X4 dryer: two stands, two 608-bearing wedges, a clip-on pulley core and three soft petals per roller. It adapts the "SPACE PI - FREE ROLL MOD" by Alberto Maciel (see [NOTICE.md](NOTICE.md)) and adds a clip-on pulley with soft petals that grip spool bores of about 50 to 60 mm.
 
 Early and experimental: tested on one printer, some checks still open (see Status). NOT FOR RESALE.
 
