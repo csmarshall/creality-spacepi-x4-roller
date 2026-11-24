@@ -1,0 +1,20 @@
+# Blueprint of the stand, drawn by common-blueprint-generator from stl/stand_pi_x4.stl.
+model: ../stl/stand_pi_x4.stl
+output: stand
+readme: ../README.md
+title: "SPACE PI X4 ROLLER · STAND"
+drawing_number: SPX4-STAND
+for: Creality Space Pi X4 dryer, free-rolling spools
+source: "tools/export_release.py (stl/stand_pi_x4.stl)"
+drawn_by: C. MARSHALL
+company: Shermer Works
+formats: [svg]
+notes:
+  - "Stand, 138 x 92.5 x 4 mm. Print flat; flat on both faces."
+preview:
+  output: roller-preview
+  parts:
+    - {model: ../stl/stand_pi_x4.stl, caption: STAND}
+    - {model: ../stl/wedge_single_sided.stl, caption: WEDGE}
+    - {model: ../step/pulley_half_clip_on_core.step, caption: PULLEY CORE}
+    - {model: ../step/clip_on_petal_soft_ribbed.step, caption: PETAL}

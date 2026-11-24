@@ -1,0 +1,13 @@
+# Blueprint of the pulley core half, drawn by common-blueprint-generator from step/pulley_half_clip_on_core.step.
+model: ../step/pulley_half_clip_on_core.step
+output: pulley_core
+readme: ../README.md
+title: "SPACE PI X4 ROLLER · PULLEY CORE HALF"
+drawing_number: SPX4-PULLEY-CORE
+for: Creality Space Pi X4 dryer, free-rolling spools
+source: "tools/export_release.py (step/pulley_half_clip_on_core.step)"
+drawn_by: C. MARSHALL
+company: Shermer Works
+formats: [svg]
+notes:
+  - "Clip-on pulley core half; two per roller."

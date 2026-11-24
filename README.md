@@ -1,8 +1,20 @@
 # Creality Space Pi X4 spool roller
 
+<p>
+  <a href="NOTICE.md"><img src="https://img.shields.io/badge/models-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="Models: CC BY-NC-SA 4.0"></a>
+  <a href="NOTICE.md"><img src="https://img.shields.io/badge/code-MIT-yellow.svg" alt="Code: MIT"></a>
+  <a href="https://buymeacoffee.com/cs_marshall"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
+</p>
+
 Printable parts that let two filament spools roll freely on bearings inside a Creality Space Pi X4 dryer: two stands, two 608-bearing wedges, a clip-on pulley core and three soft petals per roller. It adapts the "SPACE PI - FREE ROLL MOD" by Alberto Maciel (see [NOTICE.md](NOTICE.md)) and adds a clip-on pulley with soft petals that grip spool bores of about 50 to 60 mm.
 
 Built and installed on one printer and one dryer; long-term wear is still open (see Status). NOT FOR RESALE.
+
+<!-- blueprint-preview:roller-preview -->
+[![SPACE PI X4 ROLLER · STAND](blueprints/roller-preview.svg)](blueprints/roller-preview.svg)
+
+<sub>Preview generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<!-- /blueprint-preview -->
 
 ## Parts
 
@@ -25,6 +37,34 @@ Small prints to tune the fits on your own printer before committing to the big p
 | `coupon_foot_hole` | the dryer's 4 mm spindle peg | 4.05 mm hole |
 | `coupon_groove_24_teeth` | wedge ridges seating and locking in the stand pockets | 24 ridges, 0.3 mm pocket side clearance |
 | `coupon_short_slot_clearance_0_10`, `coupon_short_slot_clearance_0_00`, `coupon_short_head_nominal` | the dovetail that holds each petal in the core | slot clearance 0.10 mm at the open end, 0.00 mm at the closed end |
+
+## Blueprints
+
+Drawn from the models by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) and redrawn by the Publish workflow on every merge.
+
+<!-- blueprint:stand -->
+[![SPACE PI X4 ROLLER · STAND](blueprints/stand.svg)](blueprints/stand.svg)
+
+<sub>Drawing generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<!-- /blueprint -->
+
+<!-- blueprint:wedge -->
+[![SPACE PI X4 ROLLER · WEDGE](blueprints/wedge.svg)](blueprints/wedge.svg)
+
+<sub>Drawing generated from `tools/export_release.py (stl/wedge_single_sided.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<!-- /blueprint -->
+
+<!-- blueprint:pulley_core -->
+[![SPACE PI X4 ROLLER · PULLEY CORE HALF](blueprints/pulley_core.svg)](blueprints/pulley_core.svg)
+
+<sub>Drawing generated from `tools/export_release.py (step/pulley_half_clip_on_core.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<!-- /blueprint -->
+
+<!-- blueprint:petal -->
+[![SPACE PI X4 ROLLER · SOFT PETAL](blueprints/petal.svg)](blueprints/petal.svg)
+
+<sub>Drawing generated from `tools/export_release.py (step/clip_on_petal_soft_ribbed.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<!-- /blueprint -->
 
 ## Print settings used
 
