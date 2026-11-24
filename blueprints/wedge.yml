@@ -1,0 +1,13 @@
+# Blueprint of the wedge, drawn by common-blueprint-generator from stl/wedge_single_sided.stl.
+model: ../stl/wedge_single_sided.stl
+output: wedge
+readme: ../README.md
+title: "SPACE PI X4 ROLLER · WEDGE"
+drawing_number: SPX4-WEDGE
+for: Creality Space Pi X4 dryer, free-rolling spools
+source: "tools/export_release.py (stl/wedge_single_sided.stl)"
+drawn_by: C. MARSHALL
+company: Shermer Works
+formats: [svg]
+notes:
+  - "608-bearing wedge, 24 ridges, 8.05 mm stub."

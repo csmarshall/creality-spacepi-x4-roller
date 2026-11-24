@@ -1,0 +1,13 @@
+# Blueprint of the soft petal, drawn by common-blueprint-generator from step/clip_on_petal_soft_ribbed.step.
+model: ../step/clip_on_petal_soft_ribbed.step
+output: petal
+readme: ../README.md
+title: "SPACE PI X4 ROLLER · SOFT PETAL"
+drawing_number: SPX4-PETAL
+for: Creality Space Pi X4 dryer, free-rolling spools
+source: "tools/export_release.py (step/clip_on_petal_soft_ribbed.step)"
+drawn_by: C. MARSHALL
+company: Shermer Works
+formats: [svg]
+notes:
+  - "Soft ribbed petal; print three per pulley."
