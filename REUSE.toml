@@ -2,15 +2,15 @@ version = 1
 SPDX-PackageName = "creality-spacepi-x4-roller"
 
 [[annotations]]
-path = ["stl/**", "step/**", "blueprints/*.svg", "README.md", "NOTICE.md"]
+path = ["stl/**", "step/**", "blueprints/*.svg", "README.md", "NOTICE.md", "LICENSE.md"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2026 C. Marshall"
+SPDX-FileCopyrightText = "2026 Charles Marshall"
 SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
 
 [[annotations]]
 path = ["src/**", "tools/**", "blueprints/*.yml", ".github/**", ".gitignore", "REUSE.toml"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2026 C. Marshall"
+SPDX-FileCopyrightText = "2026 Charles Marshall"
 SPDX-License-Identifier = "MIT"
 
 # The stand and wedge adapt Alberto Maciel's SPACE PI - FREE ROLL MOD (CC BY-NC, see NOTICE.md), so they and their blueprints credit both.
@@ -18,5 +18,5 @@ SPDX-License-Identifier = "MIT"
 [[annotations]]
 path = ["stl/stand_pi_x4.stl", "stl/wedge_single_sided.stl", "blueprints/stand.svg", "blueprints/wedge.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = ["2026 C. Marshall", "Alberto Maciel <https://makerworld.com/models/2741360>"]
+SPDX-FileCopyrightText = ["2026 Charles Marshall", "Alberto Maciel <https://makerworld.com/models/2741360>"]
 SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
