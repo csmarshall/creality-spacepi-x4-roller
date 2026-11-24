@@ -13,7 +13,7 @@ Built and installed on one printer and one dryer; long-term wear is still open (
 <!-- blueprint-preview:roller-preview -->
 [![SPACE PI X4 ROLLER · STAND](blueprints/roller-preview.svg)](blueprints/roller-preview.svg)
 
-<sub>Preview generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<sub>Preview generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model</sub>
 <!-- /blueprint-preview -->
 
 ## Parts
@@ -45,25 +45,25 @@ Drawn from the models by [common-blueprint-generator](https://github.com/csmarsh
 <!-- blueprint:stand -->
 [![SPACE PI X4 ROLLER · STAND](blueprints/stand.svg)](blueprints/stand.svg)
 
-<sub>Drawing generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<sub>Drawing generated from `tools/export_release.py (stl/stand_pi_x4.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model</sub>
 <!-- /blueprint -->
 
 <!-- blueprint:wedge -->
 [![SPACE PI X4 ROLLER · WEDGE](blueprints/wedge.svg)](blueprints/wedge.svg)
 
-<sub>Drawing generated from `tools/export_release.py (stl/wedge_single_sided.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<sub>Drawing generated from `tools/export_release.py (stl/wedge_single_sided.stl)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model</sub>
 <!-- /blueprint -->
 
 <!-- blueprint:pulley_core -->
 [![SPACE PI X4 ROLLER · PULLEY CORE HALF](blueprints/pulley_core.svg)](blueprints/pulley_core.svg)
 
-<sub>Drawing generated from `tools/export_release.py (step/pulley_half_clip_on_core.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<sub>Drawing generated from `tools/export_release.py (step/pulley_half_clip_on_core.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model</sub>
 <!-- /blueprint -->
 
 <!-- blueprint:petal -->
 [![SPACE PI X4 ROLLER · SOFT PETAL](blueprints/petal.svg)](blueprints/petal.svg)
 
-<sub>Drawing generated from `tools/export_release.py (step/clip_on_petal_soft_ribbed.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model · [Buy me a coffee](https://buymeacoffee.com/cs_marshall)</sub>
+<sub>Drawing generated from `tools/export_release.py (step/clip_on_petal_soft_ribbed.step)` by [common-blueprint-generator](https://github.com/csmarshall/common-blueprint-generator) on every change to the model</sub>
 <!-- /blueprint -->
 
 ## Print settings used
