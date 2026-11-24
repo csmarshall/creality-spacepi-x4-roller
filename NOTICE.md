@@ -9,7 +9,7 @@ This repository is an independent modification and extension of an existing mode
 - **Page:** https://makerworld.com/models/2741360-space-pi-free-roll-mod
 - **Licence:** the upstream model file carries the licence tag **CC BY-NC** in its embedded metadata. The metadata does not state a version; check the page for the exact terms before you rely on them.
 
-A second listing, **SPACE PI X4 - FREE ROLL MOD** (https://makerworld.com/en/models/2771247-space-pi-x4-free-roll-mod, mirrored at https://3dgo.app/models/makerworld/2771247, dated May 2026 there), is the X4 version and is probably the one the stand and wedge meshes were taken from. Its author and licence have not been confirmed from the page itself; the CC BY-NC tag above is the one read from the model file. Until that is checked, treat both listings as credited upstream works under non-commercial terms.
+A second listing, **SPACE PI X4 - FREE ROLL MOD** (formerly https://makerworld.com/en/models/2771247-space-pi-x4-free-roll-mod, dated May 2026 on the 3DGo mirror https://3dgo.app/models/makerworld/2771247), was the X4 version and is probably the one the stand and wedge meshes were taken from. As of 2026-11-24 that MakerWorld page returns 404, so its author and licence could not be confirmed from the page; the CC BY-NC tag above is the one read from the model file. Both listings are credited here as upstream works under non-commercial terms.
 
 ## What comes from upstream
 

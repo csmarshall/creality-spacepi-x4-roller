@@ -2,7 +2,7 @@
 
 Printable parts that let two filament spools roll freely on bearings inside a Creality Space Pi X4 dryer: two stands, two 608-bearing wedges, a clip-on pulley core and three soft petals per roller. It adapts the "SPACE PI - FREE ROLL MOD" by Alberto Maciel (see [NOTICE.md](NOTICE.md)) and adds a clip-on pulley with soft petals that grip spool bores of about 50 to 60 mm.
 
-Early and experimental: tested on one printer, some checks still open (see Status). NOT FOR RESALE.
+Built and installed on one printer and one dryer; long-term wear is still open (see Status). NOT FOR RESALE.
 
 ## Parts
 
@@ -28,13 +28,15 @@ Small prints to tune the fits on your own printer before committing to the big p
 
 ## Print settings used
 
-ABS on a Snapmaker U1 with a 0.4 mm hardened steel nozzle, Snapmaker Orca 2.4.1, 0.12 mm layers, gyroid infill 15%. Walls: stands 2, cores 4, wedges and petals 6. Outer brims: petals 5 mm, cores 4 mm, stands 8 mm. Print the stands flat. Other materials are untested.
+ABS on a Snapmaker U1 with a 0.4 mm hardened steel nozzle, Snapmaker Orca 2.4.1, 0.20 mm layers, gyroid infill 15%. Walls: stands 2, cores 4, wedges and petals 6. Outer brims: petals 5 mm, cores 4 mm, stands 8 mm. Print the stands flat. Other materials are untested.
 
 ## Status
 
 Seen on a print (one printer, 0.20 mm coupons): the 608 presses in flush by hand, the wedge stub is a good fit, the 4.05 mm foot hole is slightly tight but works, the dovetail slots slide and hold, and the wedge seats, locks and lifts out of the groove coupon.
 
-Not yet verified: that a stand stays flat enough not to rub the spool, free rotation of the whole stack, clearance under the dryer lid above a 200 mm spool, long-term strength of the petal necks and wedge stub. The sizes above came from one printer and one filament; expect to adjust.
+Seen installed (one Space Pi X4): the stands stay flat and do not rub the spool, the whole stack spins freely with a spool loaded, the lid closes over a 200 mm spool, and the petals grip the spool bore.
+
+Not yet verified: long-term strength of the petal necks and wedge stub. The sizes above came from one printer and one filament; expect to adjust.
 
 ## Rebuild
 
