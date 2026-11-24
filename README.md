@@ -1,8 +1,8 @@
 # Creality Space Pi X4 spool roller
 
 <p>
-  <a href="NOTICE.md"><img src="https://img.shields.io/badge/models-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="Models: CC BY-NC-SA 4.0"></a>
-  <a href="NOTICE.md"><img src="https://img.shields.io/badge/code-MIT-yellow.svg" alt="Code: MIT"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/models-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="Models: CC BY-NC-SA 4.0"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/code-MIT-yellow.svg" alt="Code: MIT"></a>
   <a href="https://buymeacoffee.com/cs_marshall"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
 </p>
 
@@ -90,4 +90,4 @@ A passing build shows the parts agree with the design values, not that they fit 
 
 ## Licences
 
-Models and documents: CC BY-NC-SA 4.0. Code: MIT. See [NOTICE.md](NOTICE.md) and `REUSE.toml`.
+Models, drawings and documents: CC BY-NC-SA 4.0, not for resale. Code: MIT. See [LICENSE.md](LICENSE.md) for what that allows, [NOTICE.md](NOTICE.md) for the upstream credits, and `REUSE.toml` for the per-file map.
