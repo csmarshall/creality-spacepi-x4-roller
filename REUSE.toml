@@ -13,10 +13,10 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Charles Marshall"
 SPDX-License-Identifier = "MIT"
 
-# The stand and wedge adapt Alberto Maciel's SPACE PI - FREE ROLL MOD (CC BY-NC, see NOTICE.md), so they and their blueprints credit both.
+# The stand and wedge adapt Alberto Maciel's SPACE PI - FREE ROLL MOD (CC BY-NC, see NOTICE.md), so they, their blueprints and the release 3MF that holds them credit both.
 # Listed last so it wins over the general model table above.
 [[annotations]]
-path = ["stl/stand_pi_x4.stl", "stl/wedge_single_sided.stl", "blueprints/stand.svg", "blueprints/wedge.svg"]
+path = ["stl/stand_pi_x4.stl", "stl/wedge_single_sided.stl", "blueprints/stand.svg", "blueprints/wedge.svg", "3mf/free_roll_x4_u1_abs.3mf"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = ["2026 Charles Marshall", "Alberto Maciel <https://makerworld.com/models/2741360>"]
 SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
