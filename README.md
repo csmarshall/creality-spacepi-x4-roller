@@ -81,7 +81,8 @@ These are the settings stored in [`3mf/free_roll_x4_u1_abs.3mf`](3mf/free_roll_x
 | Shared by every part | |
 |---|---|
 | Printer | Snapmaker U1 (0.4 nozzle), Snapmaker Orca 2.4.1 |
-| Filament | ABS, nozzle 265 °C, bed 100 °C, chamber 60 °C |
+| Filament | ABS, nozzle 265 °C, bed 100 °C |
+| Chamber | not controlled (the 3MF stores a target, but chamber control is off) |
 | First layer | 0.2 mm |
 | Infill | gyroid 15% |
 | Outer walls | 60 mm/s, 2000 mm/s² |
@@ -106,7 +107,7 @@ Python 3 with build123d, trimesh, numpy, scipy, shapely, matplotlib and manifold
 
     python3 tools/export_release.py
 
-This runs every build script in `src/`, checks watertightness, that the final wedge clears the stand while a half-pitch turn locks, and that the stack is 72.60 mm with no overlaps, then copies the models to `stl/` and `step/`. The `.3mf` print-plate builders in `src/` also need a Moonraker printer holding a sliced coupon gcode (set `PRINTER_HOST`); the model builders do not. The release 3MF is `PRINTER_HOST=<host> python3 src/build_stack_by_part.py 2` (two rollers, one dryer) copied to `3mf/free_roll_x4_u1_abs.3mf`; then run `python3 tools/print_settings_table.py` to refresh the settings tables above (CI fails if they disagree).
+This runs every build script in `src/`, checks watertightness, that the final wedge clears the stand while a half-pitch turn locks, and that the stack is 72.60 mm with no overlaps, then copies the models to `stl/` and `step/`. The `.3mf` print-plate builders in `src/` also need a Moonraker printer holding a sliced coupon gcode (set `PRINTER_HOST`); the model builders do not. The release 3MF: run `PRINTER_HOST=<host> python3 src/build_stack_by_part.py 2` (two rollers, one dryer), copy `src/Free Roll - Parts By Group 0.12 (fast inner).3mf` (two rollers is the default, so the name carries no count) to `3mf/free_roll_x4_u1_abs.3mf`, then run `python3 tools/print_settings_table.py` to refresh the settings tables above. CI fails if the README tables and the 3MF disagree; it does not rebuild the 3MF from source.
 
 A passing build shows the parts agree with the design values, not that they fit your printer.
 

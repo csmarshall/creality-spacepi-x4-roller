@@ -55,7 +55,9 @@ def load(path: Path) -> tuple[dict[str, str | list[str]], dict[str, dict[str, st
         for obj in objects:
             meta = {m.get("key", ""): m.get("value", "") for m in obj.findall("metadata")}
             name = meta.pop("name", "")
-            meta.pop("extruder", None)
+            extruder = meta.pop("extruder", str(FILAMENT_SLOT + 1))
+            if extruder != str(FILAMENT_SLOT + 1):
+                raise RuntimeError(f"{path.name}: object {name!r} prints from extruder {extruder}; the table reads filament slot {FILAMENT_SLOT + 1} only")
             label = next((lbl for prefix, lbl in PARTS if name.startswith(prefix)), None)
             if label is None:
                 raise RuntimeError(f"{path.name}: object {name!r} is not one of the release parts {[p for p, _ in PARTS]}")
@@ -74,7 +76,7 @@ def render(path: Path) -> str:
     project, overrides, counts = load(path)
 
     def get(label: str, key: str) -> str:
-        return first(overrides[label].get(key, project[key]))
+        return first(overrides[label][key] if key in overrides[label] else project[key])
 
     rows = ["| Part | Count | Layer | Walls | Top / bottom shells | Brim | Inner walls |", "|---|---|---|---|---|---|---|"]
     for _, label in PARTS:
@@ -84,8 +86,9 @@ def render(path: Path) -> str:
         rows.append(f"| {label} | {counts[label]} | {get(label, 'layer_height')} mm | {get(label, 'wall_loops')} | {get(label, 'top_shell_layers')} / "
                     f"{get(label, 'bottom_shell_layers')} | {brim} | {get(label, 'inner_wall_speed')} mm/s, {get(label, 'inner_wall_acceleration')} mm/s² |")
     shared = [
-        ("Printer", f"{project['printer_settings_id']}, Snapmaker Orca 2.4.1"),
-        ("Filament", f"{first(project['filament_type'])}, nozzle {first(project['nozzle_temperature'])} °C, bed {first(project['hot_plate_temp'])} °C, chamber {first(project['chamber_temperature'])} °C"),
+        ("Printer", f"{project['printer_settings_id']}, Snapmaker Orca {project['version']}"),
+        ("Filament", f"{first(project['filament_type'])}, nozzle {first(project['nozzle_temperature'])} °C, bed {first(project['hot_plate_temp'])} °C"),
+        ("Chamber", f"{first(project['chamber_temperature'])} °C" if first(project.get("activate_chamber_temp_control", "0")) == "1" else "not controlled (the 3MF stores a target, but chamber control is off)"),
         ("First layer", f"{project['initial_layer_print_height']} mm"),
         ("Infill", f"{project['sparse_infill_pattern']} {project['sparse_infill_density']}"),
         ("Outer walls", f"{first(project['outer_wall_speed'])} mm/s, {first(project['outer_wall_acceleration'])} mm/s²"),
@@ -95,7 +98,7 @@ def render(path: Path) -> str:
     ]
     table2 = ["| Shared by every part | |", "|---|---|"] + [f"| {k} | {v} |" for k, v in shared]
     note = (f"These are the settings stored in [`3mf/{path.name}`](3mf/{path.name}) (one dryer's set: two rollers, five plates), "
-            "the same per-part settings the installed parts were printed with. Open the 3MF in Snapmaker Orca 2.4.1 and the per-part values are already applied.")
+            f"the same per-part settings the installed parts were printed with. Open the 3MF in Snapmaker Orca {project['version']} and the per-part values are already applied.")
     return "\n".join([BEGIN, note, "", *rows, "", *table2, END])
 
 
