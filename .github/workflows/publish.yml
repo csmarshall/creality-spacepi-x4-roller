@@ -27,4 +27,4 @@ jobs:
     uses: csmarshall/common-blueprint-generator/.github/workflows/release.yml@v1
     with:
       bump: ${{ inputs.bump || 'patch' }}
-      prints-paths: stl step blueprints NOTICE.md LICENSES
+      prints-paths: 3mf stl step blueprints NOTICE.md LICENSES

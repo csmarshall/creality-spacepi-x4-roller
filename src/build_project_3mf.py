@@ -66,6 +66,14 @@ BED_MM = 270.0
 PLATE_GAP_FRACTION = 0.2  # Orca spaces plates by a fifth of the bed; read off the FlatStand project (plate 2 sits 324 mm right of plate 1)
 OBJECT_GAP_MM = 10.0
 MIN_GAP_MM = 5.0  # the verification fails below this footprint gap
+KEEP_UPSTREAM_METADATA = ("Application", "CopyRight", "Snapmaker_Orca:3mfVersion")   # CopyRight is the upstream remix credit; every other upstream key (designer, profile and user ids, description) describes Alberto Maciel's MakerWorld listing, not this file
+PROJECT_METADATA = {
+    "Title": "Creality Space Pi X4 spool roller",
+    "Designer": "Charles Marshall",
+    "Description": "Free-rolling 608-bearing spool roller for the Creality Space Pi X4 dryer, adapted from SPACE PI - FREE ROLL MOD by Alberto Maciel. Source, STEP and build code: https://github.com/csmarshall/creality-spacepi-x4-roller",
+    "License": "BY-NC-SA",
+    "Origin": "remix",
+}
 NAMESPACE = uuid.UUID("6f1c0c2e-5a53-4b6e-9a77-3c1f4b0d9e01")
 CORE = "http://schemas.microsoft.com/3dmanufacturing/core/2015/02"
 
@@ -264,14 +272,28 @@ def verify(path: Path, instances: list[Instance], kinds: dict[str, Kind]) -> Non
     log.info("verified: %d objects on %d plates, all closed, on the bed, >= %.0f mm apart; profile %s, layer height %s, outer wall %s", len(instances), len(boxes), MIN_GAP_MM, cfg["print_settings_id"], cfg["layer_height"], cfg["outer_wall_speed"])
 
 
+def project_header(original: str) -> str:
+    """The base file's model header (XML declaration and <model> element) with only KEEP_UPSTREAM_METADATA kept and PROJECT_METADATA added."""
+    header = re.sub(r"<build.*", "", original[: original.index("<resources>")], flags=re.S)
+    kept = re.findall(r' *<metadata name="([^"]+)">.*?</metadata>\n?', header, flags=re.S)
+    missing = [k for k in KEEP_UPSTREAM_METADATA if k not in kept]
+    if missing:
+        raise RuntimeError(f"base 3MF lacks metadata {missing}")
+    header = re.sub(r' *<metadata name="([^"]+)">.*?</metadata>\n?', lambda m: m.group(0) if m.group(1) in KEEP_UPSTREAM_METADATA else "", header, flags=re.S)
+    ours = "".join(f' <metadata name="{k}">{escape(v)}</metadata>\n' for k, v in PROJECT_METADATA.items())
+    model_open = re.search(r"<model[^>]*>\n", header)
+    if model_open is None:
+        raise RuntimeError("base 3MF header has no <model> element")
+    return header[: model_open.end()] + ours + header[model_open.end():]
+
+
 def write_project(output: Path, kinds: dict[str, Kind], instances: list[Instance], plate_names: list[str], profile: dict[str, str]) -> None:
     """Write the project 3MF (meshes, instances, plates, profile applied over the FlatStand settings) and verify it by reading it back."""
     layer_height = profile["layer_height"]
     paths = {k.mesh_id: f"/3D/Objects/{k.name}.model" for k in kinds.values()}
     with zipfile.ZipFile(BASE_3MF) as base:
         original = base.read("3D/3dmodel.model").decode()
-        header = original[: original.index("<resources>")]
-        header = re.sub(r"<build.*", "", header)
+        header = project_header(original)
         filament_files = {n: base.read(n) for n in base.namelist() if n.startswith("Metadata/filament_settings_")}
         content_types = base.read("[Content_Types].xml")
     rels = ('<?xml version="1.0" encoding="UTF-8"?>\n<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">\n'

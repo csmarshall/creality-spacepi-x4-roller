@@ -17,7 +17,7 @@ A second listing, **SPACE PI X4 - FREE ROLL MOD** (formerly https://makerworld.c
 - The **wedge** (`stl/wedge_single_sided.stl`) reuses the upstream wedge's section, with a new stub and 24 ridges.
 - The **pulley core and the soft petals**, and every test coupon, are new designs written for this repository, made to meet the upstream stand and wedge.
 
-The upstream files are **not included** here. To rebuild, download the upstream model from the page above and put the 3MF that holds the stand and wedge meshes, named `SpacePi-X4+OG-PULLEY+NEW-WEDGE.3mf` as the scripts expect, into `src/`. Rename the file or change `SOURCE` in `src/build_flat_stand.py` and `src/build_double_wedge.py` if your download is named differently.
+The upstream files are **not included** here. To rebuild, download the upstream model from the page above and put the 3MF that holds the stand and wedge meshes, named `SpacePi-X4+OG-PULLEY+NEW-WEDGE.3mf` as the scripts expect, into `src/`. Rename the file or change `SOURCE` in `src/build_flat_stand.py` and `src/build_double_wedge.py` if your download is named differently. The `.3mf` plate builders (including the release 3MF) also take their base project, filament presets and the upstream remix credit from the upstream project file `SpacePi-X4+FreeRoll-FlatStand.3mf` (`BASE_3MF` in `src/build_project_3mf.py`); put that in `src/` too. The release 3MF keeps only the upstream credit from it, not the upstream listing's description or profile details.
 
 ## Licences here
 
