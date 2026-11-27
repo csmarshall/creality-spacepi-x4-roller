@@ -2,7 +2,7 @@ version = 1
 SPDX-PackageName = "creality-spacepi-x4-roller"
 
 [[annotations]]
-path = ["stl/**", "step/**", "blueprints/*.svg", "README.md", "NOTICE.md", "LICENSE.md"]
+path = ["stl/**", "step/**", "photos/**", "blueprints/*.svg", "README.md", "NOTICE.md", "LICENSE.md"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Charles Marshall"
 SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
