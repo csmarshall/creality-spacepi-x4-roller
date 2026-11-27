@@ -10,6 +10,11 @@ Printable parts that let two filament spools roll freely on bearings inside a Cr
 
 Built and installed on one printer and one dryer; long-term wear is still open (see Status). NOT FOR RESALE.
 
+<p>
+  <a href="photos/01_two_spools_loaded.jpg"><img src="photos/01_two_spools_loaded.jpg" width="49%" alt="Two spools loaded on the rollers in a Space Pi X4, with the grey core and red petals visible between them"></a>
+  <a href="photos/02_stands_installed.jpg"><img src="photos/02_stands_installed.jpg" width="49%" alt="The four stands seated on the dryer's spindles before the rollers go in"></a>
+</p>
+
 <!-- blueprint-preview:roller-preview -->
 [![SPACE PI X4 ROLLER · STAND](blueprints/roller-preview.svg)](blueprints/roller-preview.svg)
 
